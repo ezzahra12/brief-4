@@ -1,0 +1,107 @@
+[
+{
+    "id":"1",
+    "img":"./img/card/card-img.png",
+    "name":"Dauntless",
+    "prix":"24$",
+    "description":"This section of the page is incomplete. You can help Zelda Wiki by expanding it.",
+    "type": "Legendar"
+
+},
+{
+    "id":"2",
+    "img":"./img/card/aba.png",
+    "name":"Aba",
+    "prix":"24$",
+    "description":"This section of the page is incomplete. You can help Zelda Wiki by expanding it.",
+    "type": "Mythic"
+},
+{
+    "id":"3",
+    "img":"./img/card/abi.png",
+    "name":"Abe",
+    "prix":"24$",
+    "description":"This section of the page is incomplete. You can help Zelda Wiki by expanding it.",
+    "type": "Rare"
+},
+{
+    "id":"4",
+    "img":"./img/card/addison.png",
+    "name":"Addison",
+    "prix":"24$",
+    "description":"This section of the page is incomplete. You can help Zelda Wiki by expanding it.",
+    "type": "Common"
+},
+{
+    "id":"5",
+    "img":"./img/card/agus.png",
+    "name":"Agus",
+    "prix":"24$",
+    "description":"This section of the page is incomplete. You can help Zelda Wiki by expanding it.",
+    "type": "Legendar"
+
+},{
+    "id":"6",
+    "img":"./img/card/card-img.png",
+    "name":"Bosco",
+    "prix":"24$",
+    "description":"This section of the page is incomplete. You can help Zelda Wiki by expanding it.",
+    "type": "Common"
+
+},{
+    "id":"7",
+    "img":"./img/card/card-img.png",
+    "name":"botrick",
+    "prix":"24$",
+    "description":"This section of the page is incomplete. You can help Zelda Wiki by expanding it.",
+    "type": "Common"
+
+},{
+    "id":"8",
+    "img":"./img/card/card-img.png",
+    "name":"boy",
+    "prix":"24$",
+    "description":"This section of the page is incomplete. You can help Zelda Wiki by expanding it.",
+    "type": "Rare"
+
+},{
+    "id":"9",
+    "img":"./img/card/card-img.png",
+    "name":"Agus",
+    "prix":"24$",
+    "description":"This section of the page is incomplete. You can help Zelda Wiki by expanding it.",
+    "type": "Legendar"
+
+},{
+    "id":"10",
+    "img":"./img/card/card-img.png",
+    "name":"Agus",
+    "prix":"24$",
+    "description":"This section of the page is incomplete. You can help Zelda Wiki by expanding it.",
+    "type": "Rare"
+
+},{
+    "id":"11",
+    "img":"./img/card/card-img.png",
+    "name":"Agus",
+    "prix":"24$",
+    "description":"This section of the page is incomplete. You can help Zelda Wiki by expanding it.",
+    "type": "Legendar"
+
+},{
+    "id":"12",
+    "img":"./img/card/card-img.png",
+    "name":"Agus",
+    "prix":"24$",
+    "description":"This section of the page is incomplete. You can help Zelda Wiki by expanding it.",
+    "type": "Mythic"
+
+},{
+    "id":"13",
+    "img":"./img/card/card-img.png",
+    "name":"Agus",
+    "prix":"24$",
+    "description":"This section of the page is incomplete. You can help Zelda Wiki by expanding it.",
+    "type": "Common"
+}
+]

@@ -31,22 +31,14 @@ async function fetchCard (){
 
         let currentIndex = 0;
 
-        const prev = document.getElementById("prev");
-        const next = document.getElementById("next");
-
-        prev.addEventListener("click", ()=>{
-            if(currentIndex !== 0){
-                currentIndex-=3;
-                slider_container.style.transform = `translateX(-${currentIndex * (width + gap)}px)`;
-            }
-        })
-
-        next.addEventListener("click", ()=>{
+        setInterval(()=>{
             if(currentIndex <= data.length - 3){
                 currentIndex+=3;
-                slider_container.style.transform = `translateX(-${currentIndex * (width + gap)}px)`;
+            }else{
+                currentIndex = 0;
             }
-        })
+            slider_container.style.transform = `translateX(-${currentIndex * (width + gap)}px)`;
+        },2000)
     } catch (error) {
         console.error(error);
     }

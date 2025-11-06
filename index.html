@@ -48,64 +48,16 @@
     <section class="w-screen min-h-screen py-20">
       <div class="w-3/5 ms-auto me-20 flex justify-between items-center">
         <p class="text-2xl">currently trending cards</p>
-        <button class="bg-[#C9C39C] text-black text-xl px-2 py-3">see all</button>
+        <button class="bg-[#C9C39C] text-black text-xl px-2 py-3"><a href="market.html">see all</a></button>
       </div>
-      <div class="h-[80vh] w-5/6 flex justify-between items-center mx-auto my-28">
-          <div class="w-[400px] h-[560px] bg-card-bg bg-center bg-contain bg-no-repeat flex flex-col justify-start relative">
-            <div class="bg-card-header bg-center bg-contain bg-no-repeat w-11/12 m-auto h-[15vh] absolute top-0 left-4 flex justify-center items-center text-black">
-              <div class="bg-coin bg-center bg-contain bg-no-repeat w-[60px] h-[60px] absolute top-4 left-0 flex justify-center items-center text-black">
-                  <p class="text-xs">10$</p>
-              </div>
-              <p>Lorem Ipsum</p>
-            </div>
-            <img class="mt-10 w-11/12 mx-auto" src="./img/card/card-img.png" alt="card-img">
-            <div class="bg-card-bar bg-center bg-contain bg-no-repeat w-[110%] h-[15vh] absolute top-[45%] left-[-5%]">
-              <p class="flex items-center justify-center text-black absolute top-1/3 left-10 mt-1">Lorem Ipsum</p>
-            </div>
-            <div class="bg-card-body bg-center bg-contain bg-no-repeat w-11/12 m-auto h-[70vh] flex flex-col justify-center gap-3 px-8">
-              <p class="text-[#6A624E]">Nam ullamcorper</p>
-              <p class="text-black">Lorem ipsum dolor sit amet, consectetur </p>
-              <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ullamcorper eu ante a tempus.</p>
-            </div>
-          </div>
-          <div class="w-[400px] h-[560px] bg-card-bg bg-center bg-contain bg-no-repeat flex flex-col justify-start relative">
-            <div class="bg-card-header bg-center bg-contain bg-no-repeat w-11/12 m-auto h-[15vh] absolute top-0 left-4 flex justify-center items-center text-black">
-              <div class="bg-coin bg-center bg-contain bg-no-repeat w-[60px] h-[60px] absolute top-4 left-0 flex justify-center items-center text-black">
-                  <p class="text-xs">20$</p>
-              </div>
-              <p>Lorem Ipsum</p>
-            </div>
-            <img class="mt-10 w-11/12 mx-auto" src="./img/card/card-img-2.png" alt="card-img">
-            <div class="bg-card-bar bg-center bg-contain bg-no-repeat w-[110%] h-[15vh] absolute top-[45%] left-[-5%]">
-              <p class="flex items-center justify-center text-black absolute top-1/3 left-10 mt-1">Lorem Ipsum</p>
-            </div>
-            <div class="bg-card-body bg-center bg-contain bg-no-repeat w-11/12 m-auto h-[70vh] flex flex-col justify-center gap-3 px-8">
-              <p class="text-[#6A624E]">Nam ullamcorper</p>
-              <p class="text-black">Lorem ipsum dolor sit amet, consectetur </p>
-              <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ullamcorper eu ante a tempus.</p>
-            </div>
-          </div>
-          <div class="w-[400px] h-[560px] bg-card-bg bg-center bg-contain bg-no-repeat flex flex-col justify-start relative">
-            <div class="bg-card-header bg-center bg-contain bg-no-repeat w-11/12 m-auto h-[15vh] absolute top-0 left-4 flex justify-center items-center text-black">
-              <div class="bg-coin bg-center bg-contain bg-no-repeat w-[60px] h-[60px] absolute top-4 left-0 flex justify-center items-center text-black">
-                  <p class="text-xs">30$</p>
-              </div>
-              <p>Lorem Ipsum</p>
-            </div>
-            <img class="mt-10 w-11/12 mx-auto" src="./img/card/card-img-3.png" alt="card-img">
-            <div class="bg-card-bar bg-center bg-contain bg-no-repeat w-[110%] h-[15vh] absolute top-[45%] left-[-5%]">
-              <p class="flex items-center justify-center text-black absolute top-1/3 left-10 mt-1">Lorem Ipsum</p>
-            </div>
-            <div class="bg-card-body bg-center bg-contain bg-no-repeat w-11/12 m-auto h-[70vh] flex flex-col justify-center gap-3 px-8">
-              <p class="text-[#6A624E]">Nam ullamcorper</p>
-              <p class="text-black">Lorem ipsum dolor sit amet, consectetur </p>
-              <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ullamcorper eu ante a tempus.</p>
-            </div>
-          </div>
+      <div class="h-[80vh] w-5/6 mx-auto my-28 overflow-hidden">
+        <div id="slider-container" class="h-[80vh] min-w-full flex justify-between items-center gap-x-10 transition-transform duration-1000">
+
+        </div>
       </div>
       <div class="h-[20vh] w-1/4 mx-auto flex justify-between items-center mt-16">
-          <button class="bg-[#C9C39C] text-black text-5xl py-5 px-10">&#60;</button>
-          <button class="bg-[#C9C39C] text-black text-5xl py-5 px-10">&#62;</button>
+          <button id="prev" class="bg-[#C9C39C] text-black text-5xl py-5 px-10">&#60;</button>
+          <button id="next" class="bg-[#C9C39C] text-black text-5xl py-5 px-10">&#62;</button>
       </div>
     </section>
     <footer class="bg-[#C9C39C] w-screen h-[40vh] text-black">
@@ -138,4 +90,5 @@
       </div>
     </footer>
 </body>
+<script src="./index.js"></script>
 </html>
