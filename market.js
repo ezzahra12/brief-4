@@ -106,7 +106,8 @@ function addToFavorites(card, favoritBtn){
     })
 }
 
-function addToCart(card, cartBtn){
+function addToCart(card, cartBtn) {
+    card.quantity = 1;
     cartArr.push(card);
     localStorage.setItem('cartArr', JSON.stringify(cartArr))
     cartBtn.outerHTML = `<button id="remove-to-cart-${card.id}" class="bg-[#C9C39C] text-black text-sm py-4 px-6 rounded-xl">Remove From Cart</button>`

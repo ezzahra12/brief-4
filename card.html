@@ -19,96 +19,43 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="guide.html">Guide</a></li>
           <li><a href="market.html">Market</a></li>
+          <li><a href="collection.html">Collection</a></li>
           <li><a href="favorite.html">Favorite</a></li>
           <li><a href="card.html">Cart</a></li>
         </ul>
       </nav>
     </header>
-    <div class="bg-[#C9C39C] mt-10 text-black">
-      <h1 class="text-center">Title Of The Card</h1>
-      <div class="flex justify-around">
-        <div
-          class="w-[400px] h-[560px] bg-card-bg bg-center bg-contain bg-no-repeat flex flex-col justify-start relative"
-        >
-          <div
-            class="bg-card-header bg-center bg-contain bg-no-repeat w-11/12 m-auto h-[15vh] absolute top-0 left-4 flex justify-center items-center text-black"
-          >
-            <div
-              class="bg-coin bg-center bg-contain bg-no-repeat w-[60px] h-[60px] absolute top-4 left-0 flex justify-center items-center text-black"
-            >
-              <p class="text-xs">24$</p>
-            </div>
-            <p>dfghj</p>
-          </div>
-          <img
-            class="mt-10 h-[40vh] w-11/12 mx-auto"
-            src="img/redgirl.png"
-            alt="card-img"
-          />
-          <div
-            class="bg-card-bar bg-center bg-contain bg-no-repeat w-[110%] h-[15vh] absolute top-[45%] left-[-5%]"
-          >
-            <p
-              class="flex items-center justify-center text-black absolute top-1/3 left-10 mt-1"
-            >
-              rare
-            </p>
-          </div>
-          <div
-            class="bg-card-body bg-center bg-contain bg-no-repeat w-11/12 m-auto h-[70vh] flex flex-col justify-center gap-3 px-8"
-          >
-            <p class="text-[#6A624E]">sdfghj</p>
-            <p class="text-gray-400">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Doloribus, hic modi, placeat magnam vero suscipit unde
-              consequuntur consectetur illum quia saepe. Nostrum sed facere
-              perferendis nisi et, id cumque omnis?
-            </p>
-          </div>
-        </div>
-        <div class="flex-col gap-2" style="gap: 20px">
-          <h3 class="text-center" style="margin-top: 20vh">quantity</h3>
-          <button id="plus" class="bg-blue-950 px-5 text-white rounded-xl">
-            +
-          </button>
-          <button id="plus" class="bg-blue-950 px-5 text-white rounded-xl">
-            -</button
-          ><br /><br /><br />
-          
-          <br /><br />
-          <button
-            class="bg-blue-950 rounded-xl text-white"
-            style="width: 100px; height: 30px"
-          >
-            REMOVE 
-          </button>
-        </div>
 
-        <div></div>
-      </div>
-    </div>
+    <section class="flex flex-col  text-white  " style=" margin: 100px; ;" >
+        <h1 class=" text-5xl text-center ">Welcome to your Cart!</h1><br>
+    
+    </section>
+    
+    <section id="cart-container" class="w-11/12 m-auto min-h-screen flex flex-col gap-y-10 justify-center items-center">
+        
+    </section>
 
-    <div style="margin-top: 20vh; text-align: center; padding-bottom: 20vh;">
-        <h3>prix total:</h3>
-          <br />
-          <p>00$</p>
-         <button
-            class="bg-blue-950 rounded-xl text-white"
-            style="width: 100px; height: 30px"
-          >
-            order
-          </button>
-           <button
-            class="bg-blue-950 rounded-xl text-white"
-            style="width: 100px; height: 30px"
-          >
-            clear
-          </button>
+    <div style="margin-top: 20vh; text-align: center; padding-bottom: 20vh">
+      <h3>prix total:</h3>
+      <br />
+      <p id="total">00$</p>
+      <button id="order"
+        class="bg-blue-950 rounded-xl text-white"
+        style="width: 100px; height: 30px"
+      >
+        order
+      </button>
+      <button id="clear"
+        class="bg-blue-950 rounded-xl text-white"
+        style="width: 100px; height: 30px"
+      >
+        clear
+      </button>
     </div>
-      <footer class="bg-[#C9C39C] w-screen h-[40vh] text-black">
+    <footer class="bg-[#C9C39C] w-screen h-[40vh] text-black">
       <div class="w-screen h-[90%] flex justify-around items-center">
         <div class="w-1/5 flex flex-col gap-3 h-[55%]">
-          <h2>Kardéa</h2>
+          <h2>KardÃ©a</h2>
           <p class="text-[#A09F92]">complete your purchase</p>
         </div>
         <div class="w-1/5 flex flex-col gap-3">
@@ -117,22 +64,23 @@
           <a class="text-[#A09F92]" href="">Team</a>
           <a class="text-[#A09F92]" href="">Mobile</a>
         </div>
-         <div class="w-1/5 flex flex-col gap-3">
+        <div class="w-1/5 flex flex-col gap-3">
           <h2>Contact</h2>
           <a class="text-[#A09F92]" href="">Help/FAQ</a>
           <a class="text-[#A09F92]" href="">Contact</a>
           <a class="text-[#A09F92]" href="">Address </a>
         </div>
-         <div class="w-1/5 flex flex-col gap-3">
+        <div class="w-1/5 flex flex-col gap-3">
           <h2>More</h2>
           <a class="text-[#A09F92]" href="">Flights</a>
           <a class="text-[#A09F92]" href="">Contact</a>
           <a class="text-[#A09F92]" href="">buying</a>
         </div>
       </div>
-      <div class="w-screen h-[10%] flex justify-center items-center"> 
+      <div class="w-screen h-[10%] flex justify-center items-center">
         <p class="text-[#A09F92]">All rights reserved@genZdevs.co</p>
       </div>
     </footer>
   </body>
+  <script src="./cart.js"></script>
 </html>
