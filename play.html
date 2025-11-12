@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="output.css">
+</head>
+
+<body class="font-[orbitron] font-bold bg-[#2e3033] text-white overflow-x-hidden">
+
+<header class="h-[10vh] border-b border-[#c9c39c5e]">
+   <nav>
+    <ul class="flex items-center justify-evenly p-7">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="guide.html">Guide</a></li>
+      <li><a href="market.html">Market</a></li>
+       <li><a href="play.html" class="text-[#C9C39C]">Play</a></li>
+      <li><a href="collection.html">Collection</a></li>
+      <li><a href="favorite.html">Favorite</a></li>
+       <li><a href="card.html">Cart</a></li>
+     
+    </ul>
+  </nav>
+</header>
+
+
+<div class="grid grid-cols-[200px,1fr,200px] h-[90vh]">
+
+  
+  <div class="bg-[#151618] border-r border-[#c9c39c5a] flex flex-col items-center py-10 gap-6 overflow-y-scroll overflow-x-hidden "   id="cartes-container">
+    <button class="bg-green-500 px-5 py-2 rounded hover:scale-105 transition" >choose 5 Card</button>
+    <p class="text-lg" id="numbercards"></p>
+  </div>
+
+ 
+  <div class="flex flex-col justify-between py-8 px-10">
+
+   
+    <div class="text-center">
+      <p class="text-[#C9C39C] mb-3">Opponent Hand (4/5)</p>
+      <div class="flex justify-center gap-3">
+        <div class="w-[100px] h-[140px] border border-[#c9c39c5e] rounded bg-center bg-cover"></div>
+        <div class="w-[100px] h-[140px] border border-[#c9c39c5e] rounded"></div>
+        <div class="w-[100px] h-[140px] border border-[#c9c39c5e] rounded"></div>
+        <div class="w-[100px] h-[140px] border border-[#c9c39c5e] rounded"></div>
+        <div class="w-[100px] h-[140px] border border-[#c9c39c5e] rounded"></div>
+      </div>
+    </div> 
+
+    <div class="flex justify-center gap-3">
+      <div class="  border-[#3d9cff] w-[100px] h-[140px] border border-[#c9c39c5e] rounded bg-center bg-cover" ></div>
+      <div class="w-[100px] h-[140px] border border-[#c9c39c5e] rounded"></div>
+      <div class="w-[100px] h-[140px] border border-[#c9c39c5e] rounded"></div>
+      <div class="w-[100px] h-[140px] border border-[#c9c39c5e] rounded"></div>
+      <div class="w-[100px] h-[140px] border border-[#c9c39c5e] rounded"></div>
+    </div>
+
+
+
+    <div class="text-center h-[25vh]">
+      <p class="mb-4">Hand (5/5)</p>
+
+      <div class="my-cards flex justify-center gap-3">
+        <div class=" border-[#3d9cff] w-[100px] h-[140px] border border-[#c9c39c5e] rounded bg-center bg-cover" ></div>
+        <div class="w-[100px] h-[140px] border border-[#c9c39c5e] rounded"></div>
+        <div class="w-[100px] h-[140px] border border-[#c9c39c5e] rounded"></div>
+        <div class="w-[100px] h-[140px] border border-[#c9c39c5e] rounded"></div>
+        <div class="w-[100px] h-[140px] border border-[#c9c39c5e] rounded"></div>
+      </div>
+
+    </div>
+
+
+</div>
+
+  
+  <div class="bg-[#151618] border-l border-[#c9c39c5a] flex flex-col items-center py-10 gap-6">
+    <p class="text-green-400 text-xl"></p>
+    <p>Your Turn</p>
+    
+    <button class="bg-green-500 px-5 py-2 rounded hover:scale-105 transition">End Turn</button>
+  </div>
+
+</div>
+
+</body>
+<script src="play.js"></script>
+</html>

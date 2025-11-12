@@ -40,7 +40,7 @@ async function fetchCard (){
                 slider_container.style.transform = `translateX(-${currentIndex * (width + gap)}px)`;
             }
         })
-
+  
         next.addEventListener("click", ()=>{
             if(currentIndex <= data.length - 3){
                 currentIndex+=3;

@@ -126,6 +126,7 @@ async function fetchCard (){
                 const cardHtml = getHtml(card)
                 market_container.append(cardHtml);
             }
+            
         })
 
         const mythic = document.getElementById("mythic");
