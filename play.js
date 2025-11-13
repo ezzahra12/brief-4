@@ -12,22 +12,24 @@ function randomcards(Arr, count=0){
     return collcopy.slice(0,count);
 }
 
+
 function fillContainers(){
     const main_container=document.getElementById("main-container");
     main_container.innerHTML="";
     let randomCard=randomcards(collectionArr,5);
-    console<
     randomCard.forEach((card)=>{
         const div=document.createElement("div");
-        div.className = "card-item w-full h-auto bg-card-bg bg-center bg-no-repeat flex flex-col justify-start relative";
+        div.className = "w-[100px] h-[140px] border border-[#c9c39c5e] rounded";
         div.innerHTML=` 
-            <div class="bg-card-header bg-center bg-contain bg-no-repeat w-auto m-auto absolute top-0 left-4 flex justify-center items-center text-black">
+            <div class="bg-card-header bg-contain bg-no-repeat w-auto m-auto absolute top-0 left-4 flex justify-center items-center text-black">
                 
-                <p>${c.name}</p>
+                <p>${card.name}</p>
             </div>
-            <img class="mt-10 h-[15vh] w-auto mx-auto" src="${
-              c.img
+            <img class="mt-10 w-[100px] h-[140px] mx-auto " src="${
+              card.img
             }" alt="card-img">
+            </div>
+            </div>
             
                
     `;
