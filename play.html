@@ -34,26 +34,27 @@
   </div>
 
  
-  <div class="flex flex-col justify-between py-8 px-10">
+  <div class="w-full flex flex-col justify-between py-8 px-10">
 
    
-    <div class="text-center">
-      <p class="text-[#C9C39C] mb-3">Opponent Hand (4/5)</p>
-      <div class="flex justify-center gap-3">
-        <div class="ai-card w-[100px] h-[140px] border border-[#c9c39c5e] rounded bg-center bg-cover"></div>
-        <div class="ai-card w-[100px] h-[140px] border border-[#c9c39c5e] rounded"></div>
-        <div class="ai-card w-[100px] h-[140px] border border-[#c9c39c5e] rounded"></div>
-        <div class="ai-card w-[100px] h-[140px] border border-[#c9c39c5e] rounded"></div>
-        <div class="ai-card w-[100px] h-[140px] border border-[#c9c39c5e] rounded" ></div>
-      </div>
-    </div> 
+    <div class="w-full text-center">
+      <p class="text-[#C9C39C] mb-3">Opponent Hand (<span id="ai-hand">5</span>/5)</p>
+    </div>
 
-    <div class="flex  justify-center gap-3" id="mainPlayZone">
-      <div class=" slot border-[#3d9cff] w-[100px] h-[140px] border border-[#c9c39c5e] rounded bg-center bg-cover" ></div>
-      <div class=" slot w-[100px] h-[140px] border border-[#c9c39c5e] rounded" ></div>
-      <div class="  slot  w-[100px] h-[140px] border border-[#c9c39c5e] rounded" ></div>
-      <div class="  slot w-[100px] h-[140px] border border-[#c9c39c5e] rounded"></div>
-      <div class=" slot w-[100px] h-[140px] border border-[#c9c39c5e] rounded" ></div>
+    <div class="flex justify-around items-center min-w-[70%] mx-auto" id="aiPlayZone">
+      <div class="ai-card w-[100px] h-[140px] border border-[#c9c39c5e] rounded"></div>
+      <div class="ai-card w-[100px] h-[140px] border border-[#c9c39c5e] rounded"></div>
+      <div class="ai-card w-[100px] h-[140px] border border-[#c9c39c5e] rounded"></div>
+      <div class="ai-card w-[100px] h-[140px] border border-[#c9c39c5e] rounded"></div>
+      <div class="ai-card w-[100px] h-[140px] border border-[#c9c39c5e] rounded"></div>
+    </div>
+
+    <div class="flex justify-around items-center min-w-[70%] mx-auto" id="mainPlayZone">
+      <div class="slot w-[100px] h-[140px] border border-[#c9c39c5e] rounded"></div>
+      <div class="slot w-[100px] h-[140px] border border-[#c9c39c5e] rounded"></div>
+      <div class="slot w-[100px] h-[140px] border border-[#c9c39c5e] rounded"></div>
+      <div class="slot w-[100px] h-[140px] border border-[#c9c39c5e] rounded"></div>
+      <div class="slot w-[100px] h-[140px] border border-[#c9c39c5e] rounded"></div>
     </div>
 
 

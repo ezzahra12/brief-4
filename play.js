@@ -6,6 +6,7 @@ let main_container = document.getElementById("main-container");
 let mainPlayZone = document.getElementById("mainPlayZone");
 let end_turn = document.getElementById("end-turn")
 let ai_cards = Array.from(document.querySelectorAll(".ai-card"));
+let ai_hand = document.getElementById("ai-hand");
 numberCards.innerHTML = `<p>Deck (${collectionArr.length})</p>`;
 
 async function fetchCard() {
@@ -59,11 +60,11 @@ function fillContainers() {
     div.setAttribute("draggable", "true");
 
     div.innerHTML = `
-        <div class="w-full h-auto bg-card-bg bg-center bg-no-repeat flex flex-col justify-start relative">
+        <div class="w-[100px] h-[140px] bg-card-bg bg-center bg-no-repeat flex flex-col justify-start relative">
             <div class="bg-card-header bg-center bg-contain bg-no-repeat w-auto m-auto absolute top-0 left-4 flex justify-center items-center text-black">
                 <p>${c.name}</p>
             </div>
-            <img class="mt-10 h-[15vh] w-auto mx-auto" src="${c.img}" alt="card-img">
+            <img class="w-full h-full" src="${c.img}" alt="card-img">
         </div>`;
   
      div.querySelector("img").setAttribute("draggable", false)
@@ -85,15 +86,12 @@ const slots = document.querySelectorAll(".slot");
 
 const aiCardArr = randomcards(collectionArr, 5);
 const aiChoices = ["attack", "defend"]
-console.log(aiCardArr);
+let aiSlotIndex = 0;
 
 
 function endTurn(){
     let index = Math.floor(Math.random() * aiCardArr.length);
     let choice = aiChoices[Math.floor(Math.random() * 2)]
-
-    
-    let aiSlotIndex = Math.floor(Math.random() * aiCardArr.length);
 
     card = aiCardArr.splice(index,1);
     const div = document.createElement("div");
@@ -101,20 +99,27 @@ function endTurn(){
     div.setAttribute("draggable", "true");
 
     div.innerHTML = `
-        <div class="w-full h-auto bg-card-bg bg-center bg-no-repeat flex flex-col justify-start relative">
+        <div class="w-[100px] h-[140px] bg-card-bg bg-center bg-no-repeat flex flex-col justify-start relative">
             <div class="bg-card-header bg-center bg-contain bg-no-repeat w-auto m-auto absolute top-0 left-4 flex justify-center items-center text-black">
                 <p>${card[0].name}</p>
             </div>
-            <img class="mt-10 h-[15vh] w-auto mx-auto" src="${card[0].img}" alt="card-img">
+            <img class="w-full h-full" src="${card[0].img}" alt="card-img">
         </div>`;
   
      div.querySelector("img").setAttribute("draggable", false)
     
-    ai_cards[index].append(div)
+    ai_cards[aiSlotIndex].append(div)
 
     if(choice === "defend"){
-      ai_cards[index].style.transform = "rotate(90deg)";
+      ai_cards[aiSlotIndex].style.transform = "rotate(90deg)";
+      ai_cards[aiSlotIndex].style.transition = "transform 0.5s";
     }
+
+    document.getElementById("aiPlayZone").classList.add("gap-x-6");
+
+    aiSlotIndex++;
+
+    ai_hand.textContent = aiCardArr.length
 
     main_container.querySelectorAll(".card-item").forEach(card => {
         card.setAttribute("draggable", true);
@@ -133,7 +138,6 @@ slots.forEach((slot) => {
 
     slot.innerHTML = "";
     slot.classList.remove("slot");
-    slot.classList.add("filled-slot");
 
     // ajouter boutons
     const actions = document.createElement("div");
@@ -159,12 +163,10 @@ slots.forEach((slot) => {
       actions.remove();
       slot.setAttribute("role", "defender");
       slot.style.transform = "rotate(90deg)";
-      draggedItem.style.transition = "transform 0.5s";
-      draggedItem.style.heigth = "20%";
-      slot.classList.add("mr-[20px]");
+      slot.style.transition = "transform 0.5s";
       mainPlayZone.classList.remove();
 
-      mainPlayZone.classList.add("flex", "justify-center", "gap-6");
+      mainPlayZone.classList.add("gap-x-6");
 
       draggedItem = null;
     });
